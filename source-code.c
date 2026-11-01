@@ -14,7 +14,7 @@ perror("sbrk increment failed");
 return 1; 
 } 
 printf("Program break after increment: %p\n", sbrk(0)); 
-36 // Use the new memory 
+36 // Use  new memory 
 char *allocated = (char *)new_brk; 
 strcpy(allocated, "Hello from heap!"); 
 printf("Stored string: %s\n", allocated); 
